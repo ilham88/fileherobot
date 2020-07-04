@@ -11,7 +11,7 @@ import os
 def download_link(link,file_name,prev_message):
   time1=time.time()
   direction="Download"
-  num_list=[str(i)+".000" for i in range(0,101,5)]
+  num_list=[str(i)+".000" for i in range(0,250,10)]
   with open(file_name, "wb") as f:
           response = requests.get(link, stream=True)
           total_length = response.headers.get('content-length')
@@ -111,8 +111,8 @@ def progress_bar_f(current,total,prev_message,time1,direction):
         )
 
 def start_msg_handler_f(client,message):
-    msg="hii.. I am FileHerobot \n"
-    msg=msg+"> Can send Send Video \n"
+    msg="hii.. I am KlopersBot \n"
+    msg=msg+"> Can Send Video \n"
     msg=msg+"> Can Send Files to telegram using Direct Links"
     message.reply_text(msg)
 
