@@ -68,7 +68,7 @@ def upload_video(client, message,file_path):
         chat_id=message.chat.id,
         video=file_path,
         reply_to_message_id=message.message_id,
-        caption="Uploaded by @fileherobot",
+        caption="Uploaded by @klopersbot",
         progress=progress_bar_f,
         progress_args=(prev_message,time1,direction),
         thumb=file_path_thumb
